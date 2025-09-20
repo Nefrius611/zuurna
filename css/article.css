@@ -1,0 +1,261 @@
+/* Article Page Specific Styles */
+
+.article-main {
+    padding-bottom: 30px;
+}
+
+.article-full {
+    margin-bottom: 30px;
+}
+
+.article-header {
+    margin-bottom: 20px;
+}
+
+.article-header h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.article-meta {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+}
+
+.article-featured-image {
+    margin-bottom: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-featured-image img {
+    width: 100%;
+}
+
+.article-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.article-body {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.article-body p {
+    margin-bottom: 20px;
+}
+
+.article-body h2 {
+    font-size: 1.8rem;
+    margin: 30px 0 15px;
+    color: #2c3e50;
+}
+
+.article-body h3 {
+    font-size: 1.5rem;
+    margin: 25px 0 15px;
+    color: #2c3e50;
+}
+
+.article-body ul, 
+.article-body ol {
+    margin: 20px 0;
+    padding-left: 25px;
+}
+
+.article-body li {
+    margin-bottom: 10px;
+}
+
+.article-body blockquote {
+    border-left: 4px solid #e74c3c;
+    padding: 15px 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    font-style: italic;
+    color: #555;
+}
+
+.article-body img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ad-inline {
+    margin: 30px 0;
+}
+
+.article-tags {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.article-tags span {
+    font-weight: 600;
+    margin-right: 10px;
+    color: #2c3e50;
+}
+
+.article-tags ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.article-tags ul li {
+    background-color: #f1f1f1;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.article-tags ul li:hover {
+    background-color: #e74c3c;
+}
+
+.article-tags ul li:hover a {
+    color: #fff;
+}
+
+.article-share {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.article-share span {
+    font-weight: 600;
+    margin-right: 15px;
+    color: #2c3e50;
+}
+
+.article-share .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.article-share .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.article-share .social-icons a:hover {
+    background-color: #e74c3c;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.related-articles {
+    margin-top: 40px;
+}
+
+.related-articles h2 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e74c3c;
+    color: #2c3e50;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.related-grid article {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #fff;
+}
+
+.related-grid article:hover {
+    transform: translateY(-5px);
+}
+
+.related-grid .article-image {
+    height: 150px;
+    overflow: hidden;
+}
+
+.related-grid .article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.related-grid article:hover .article-image img {
+    transform: scale(1.05);
+}
+
+.related-grid .article-content {
+    padding: 15px;
+}
+
+.related-grid .article-content h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.related-grid .article-meta {
+    font-size: 0.8rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .article-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .related-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .article-body {
+        font-size: 1rem;
+    }
+    
+    .article-header h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .article-share {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .article-share span {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makale - ZuurnaHaber</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ZuurnaHaber</h1>
+                <p>En Son Haberlerin Kaynağı</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="#">Politika</a></li>
+                    <li><a href="#">Ekonomi</a></li>
+                    <li><a href="#">Teknoloji</a></li>
+                    <li><a href="#">Spor</a></li>
+                    <li><a href="#">Eğlence</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container main-content">
+        <main class="article-main">
+            <div class="ad-banner">
+                <div class="ad-container">
+                    <p class="ad-label">Reklam</p>
+                    <div class="ad-content">Üst Banner Reklam Alanı</div>
+                </div>
+            </div>
+
+            <article class="article-full">
+                <div class="article-header">
+                    <h1 id="article-title">Makale Başlığı Burada Görüntülenecek</h1>
+                    <p class="article-meta">Yazan: <span id="article-author">Yazar Adı</span> | <span id="article-date">Yayın Tarihi</span></p>
+                </div>
+                
+                <div class="article-featured-image">
+                    <img id="article-image" src="https://via.placeholder.com/1200x600" alt="Makale öne çıkan görseli">
+                </div>
+
+                <div class="article-content-wrapper">
+                    <div class="article-body" id="article-content">
+                        <!-- Makale içeriği dinamik olarak yüklenecek -->
+                        <p>Makale içeriği yükleniyor...</p>
+                    </div>
+
+                    <div class="ad-inline">
+                        <div class="ad-container">
+                            <p class="ad-label">Reklam</p>
+                            <div class="ad-content">Makale İçi Reklam Alanı</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-tags">
+                    <span>Etiketler:</span>
+                    <ul id="article-tags">
+                        <!-- Etiketler dinamik olarak yüklenecek -->
+                    </ul>
+                </div>
+
+                <div class="article-share">
+                    <span>Paylaş:</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <div class="ad-banner">
+                <div class="ad-container">
+                    <p class="ad-label">Reklam</p>
+                    <div class="ad-content">Alt Banner Reklam Alanı</div>
+                </div>
+            </div>
+
+            <section class="related-articles">
+                <h2>İlgili Makaleler</h2>
+                <div class="related-grid" id="related-articles">
+                    <!-- İlgili makaleler dinamik olarak yüklenecek -->
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <div class="ad-sidebar">
+                <div class="ad-container">
+                    <p class="ad-label">Reklam</p>
+                    <div class="ad-content">Kenar Çubuğu Reklam Alanı</div>
+                </div>
+            </div>
+
+            <div class="trending">
+                <h3>Şu Anda Trend</h3>
+                <ul>
+                    <li><a href="article.html?id=8">Borsa Ekonomik İyileşme Ortamında Tüm Zamanların En Yüksek Seviyesine Ulaştı</a></li>
+                    <li><a href="article.html?id=9">Ünlü Çift Sosyal Medyada Sürpriz Düğünlerini Duyurdu</a></li>
+                    <li><a href="article.html?id=10">Yeni Akıllı Telefon Oyun Değiştiren Kamera Teknolojisi Sunuyor</a></li>
+                    <li><a href="article.html?id=11">İklim Değişikliği Konferansı 2030 İçin İddialı Hedefler Belirledi</a></li>
+                    <li><a href="article.html?id=12">Ünlü Yazar Yaklaşan Kitap Serisi Hakkında Detayları Açıkladı</a></li>
+                </ul>
+            </div>
+
+            <div class="ad-sidebar">
+                <div class="ad-container">
+                    <p class="ad-label">Reklam</p>
+                    <div class="ad-content">Kenar Çubuğu Reklam Alanı</div>
+                </div>
+            </div>
+
+            <div class="newsletter">
+                <h3>Bültenimize Abone Olun</h3>
+                <p>En son haberlerle doğrudan gelen kutunuza gönderilen güncellemeler alın.</p>
+                <form>
+                    <input type="email" placeholder="E-posta adresiniz" required>
+                    <button type="submit">Abone Ol</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>ZuurnaHaber Hakkında</h3>
+                    <p>ZuurnaHaber, küresel olayların zamanında, doğru ve kapsamlı bir şekilde haberlerini sunan önde gelen bir haber platformudur.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Hızlı Bağlantılar</h3>
+                    <ul>
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="#">İletişim</a></li>
+                        <li><a href="#">Gizlilik Politikası</a></li>
+                        <li><a href="#">Hizmet Şartları</a></li>
+                        <li><a href="#">Bizimle Reklam Verin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Bizi Takip Edin</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ZuurnaHaber. Tüm Hakları Saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/articles-data.js"></script>
+    <script src="js/article.js"></script>
+</body>
+</html>
